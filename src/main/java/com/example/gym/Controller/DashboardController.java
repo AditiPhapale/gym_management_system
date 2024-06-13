@@ -8,7 +8,7 @@ public class DashboardController {
 
     @GetMapping("/about-us")
     public String aboutUs() {
-        return "about-us"; // Assuming you have an "about-us.html" template
+        return "index"; // Assuming you have an "about-us.html" template
     }
 
     @GetMapping("/slot")

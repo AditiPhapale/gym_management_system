@@ -4,51 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background: #f4f4f4;
+            background: url('gymbackground.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
-        header {
-            background: #222;
-            padding: 20px 0;
-            color: #fff;
-            text-align: center;
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.9);
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            max-width: 1200px;
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
         }
-        h1 {
-            font-size: 3em;
-            margin: 0;
-            padding: 20px 0;
-            text-align: center;
+        .form-control {
+            color: black !important;
         }
-        h2 {
-            font-size: 2em;
-            margin: 0 0 20px;
-            text-align: center;
-        }
-        .pricing-table {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 30px;
+        footer {
+            background-color: rgba(255, 255, 255, 0.9);
         }
         .pricing-card {
             background: #fff;
-            width: 30%;
-            margin-bottom: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow: hidden;
             text-align: center;
             padding: 20px;
+            margin: 10px;
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
         }
         .pricing-card h3 {
             background: #f09d51;
@@ -77,29 +62,40 @@
             font-size: 2em;
             margin: 20px 0;
         }
-        .footer {
-            background: #222;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Pricing Plans</h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">STAMINA.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">SIGNUP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">LOGIN</a>
+                </li>
+              
+             
+            </ul>
         </div>
-    </header>
+    </div>
+</nav>
 
-    <!-- Pricing Plans Section -->
-    <section class="pricing-plans">
-        <div class="container">
-            <h2>Choose the plan that fits you best</h2>
-            <div class="pricing-table">
-                <!-- Plan 1 -->
+<section class="vh-80">
+    <div class="container py-5 h-100">
+        <h2 class="text-center mb-5">Choose the plan that fits you best</h2>
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 d-flex flex-wrap justify-content-center">
                 <div class="pricing-card">
                     <h3>Basic Plan</h3>
                     <p class="price">$20 / month</p>
@@ -110,7 +106,6 @@
                         <li>1 free training session</li>
                     </ul>
                 </div>
-                <!-- Plan 2 -->
                 <div class="pricing-card">
                     <h3>Standard Plan</h3>
                     <p class="price">$50 / month</p>
@@ -122,7 +117,6 @@
                         <li>Access to group classes</li>
                     </ul>
                 </div>
-                <!-- Plan 3 -->
                 <div class="pricing-card">
                     <h3>Premium Plan</h3>
                     <p class="price">$90 / month</p>
@@ -137,13 +131,23 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Gym Website. All Rights Reserved.</p>
-        </div>
-    </footer>
+<footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+        <h6>Contact Us</h6>
+        <p>Email: support@stamina.com | Phone: +123 456 7890</p>
+        <h6>About Us</h6>
+        <p>We are a leading gym management company providing top-notch services to ensure the best experience for our customers.</p>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        &copy; 2024 STAMINA. All rights reserved.
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
